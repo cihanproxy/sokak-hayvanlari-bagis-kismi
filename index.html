@@ -86,17 +86,7 @@ $(document).ready(function () {
 		$('#Menudort').toggle('medium');
 	});
 });
-</script>
-		<script>
-function ininalf() {
-  var copyText = document.getElementById("ininal");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
-
-		
+</script>		
 	</head>
 	<body>
 	
@@ -215,8 +205,18 @@ function ininalf() {
    					 <a href="#row" >  <p>İninal (detay için tıkla) <p> </a> 
 					</div>
 					<div id="Menuuc" style="display:none; background-color: #black; width:200px; height: 100px; border:1px solid #000000;">
-					    Barkod: 4091720139268 
+					   <input type="text" value="Barkod: 4091720139268 " id="ininal" disable>
+						<br><button onclick="ininalf()">Barkod'u kopyala</button>
 					</div></center>
+						
+						<script>
+						function ibanf() {
+						  var copyText = document.getElementById("iban");
+						  copyText.select();
+						  document.execCommand("copy");
+						  alert("Barkod kopyalandı: " + copyText.value);
+						}
+						</script>
 
 					<center><div id="Menu">
    					 <a href="#row" > <p>EFT (detay için tıkla) <p></a>
@@ -231,10 +231,10 @@ function ininalf() {
 						  var copyText = document.getElementById("iban");
 						  copyText.select();
 						  document.execCommand("copy");
-						  alert("Yazı kopyalandı: " + copyText.value);
+						  alert("IBAN kopyalandı: " + copyText.value);
 						}
 						</script>
-
+						
 						
 					</div>
 				</div>
